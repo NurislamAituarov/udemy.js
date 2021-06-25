@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kvadr{
+            max-width: 230px;
+            height: 200px;
+            background-color: blue;
+            margin-bottom: 10px;
+            margin: 0 auto;
+        }
+        .btn{
+            width: 55px;
+            height: 20px;
+            background-color: blueviolet;
+            color: cyan;
+        }
+        .container{
+            width: 800px;
+            height: 600px;
+            background-color: burlywood;
+            margin: 0 auto;
+            
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+        }
+        .sidebar{
+            width: max-content;
+            background-color: cadetblue;
+            margin: 0 auto;
+        }
+        .section{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%, -50%);
+            /* margin: 0 auto; */
+            width: max-content;
+            background-color: black;
+        }
+        @media screen and (max-width: 600px) {
+            .kvadr {
+            width: 300px;
+            height: 50px;
+            /* float: left; */
+            margin-left: 100px;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .sidebar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 230px;
+            /* float: left; */
+            margin-left: 100px;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .btn {
+            width: 50px;
+            height: 10px;
+            /* float: left; */
+            font-size: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <div class="kvadr"></div>
+            <div class="sidebar">
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn">4</button>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="/js/practic.js"></script> -->
+    <!-- <script src="/js/prime.js"></script> -->
+    <!-- <script src="/git/js/practic.js"></script> -->
+    <script src="/git/js/tipizaciya.js"></script>
+    
+</body>
+</html>
