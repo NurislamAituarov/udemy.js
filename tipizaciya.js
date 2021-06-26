@@ -8,15 +8,15 @@ const a = {
         age: 26,
     }
 }
-const b = {};
-// Object.setPrototypeOf(b, a)
-const v = {...a}
-// const b = {...a}
-// b.v.name = 0
-a.v.name = 1
-// console.log(b)
-console.log(v)
-console.log(a)
+for( let key in a){
+    if(typeof a[key] == 'object' ){
+    for(let i in a[key]){
+            console.log(i +': ' +a[key][i])
+        }
+    }else{
+        console.log(key + ': ' + a[key])
+    }
+}
 
 
 
